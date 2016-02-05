@@ -2,10 +2,10 @@
 	"version": "0.2.0",
 	"configurations": [
 		{
-			"name": "Launch index.html",
+			"name": "Launch clarizenform",
 			"type": "chrome",
 			"request": "launch",
-			"file": "debug.js"
+			"file": "clarizenform.html"
 		},
 		{
 			"name": "Launch localhost with sourcemaps",

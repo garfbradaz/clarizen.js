@@ -1,3 +1,10 @@
+
+const ClarizenConstants = {};
+ClarizenConstants.Urls = {};
+ClarizenConstants.Urls = {
+    getServerDefinition: "https://api.clarizen.com/v2.0/services/authentication/getServerDefinition"
+};
+
 var Clarizen = function (userName, password, applicationId, optionalSessionId) {
 
     if (userName === undefined) {
@@ -10,25 +17,23 @@ var Clarizen = function (userName, password, applicationId, optionalSessionId) {
     this.password = password;
     this.applicationId = applicationId;
     this.sessionId = (optionalSessionId === undefined) ? '' : optionalSessionId;
+    this.constants = ClarizenConstants.Urls;
 };
 
 Clarizen.prototype.Login = function() {
-    console.log("un : " + this.userName);
-};
+    var xmlHttp = new XMLHttpRequest();
+    
+};  
 
 
 var Person = function (firstName) {
   this.firstName = firstName;
+  this.secondname = [];
 };
 
 Person.prototype.sayHello = function () {
     console.log("Hello, I'm " + this.firstName);
 };
 
-var person1 = new Person("Alice");
-var person2 = new Person("Bob");
 
-// call the Person sayHello method.
-person1.sayHello(); // logs "Hello, I'm Alice"
-person2.sayHello(); // logs "Hello, I'm Bob"
-
+var p = new Person("Bum");

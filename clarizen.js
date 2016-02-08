@@ -22,6 +22,12 @@ var Clarizen = function (userName, password, applicationId, optionalSessionId) {
 
 Clarizen.prototype.Login = function() {
     var xmlHttp = new XMLHttpRequest();
+    var obj = new ClarizenO();
+    var user = obj.factory({
+        type: "User",
+        password: "909898fdzf"    
+    });
+        
     
 };  
 

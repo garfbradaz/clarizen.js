@@ -3,11 +3,11 @@ function ClarizenUser (options) {
     this.password = options.password || 'defaultPW'; 
 }
 
-function ClarizenObject () {
+function ClarizenO () {
     console.log("ClarizenObject Defined");
 }
 
-ClarizenObject.prototype.factory = function bum(options) {
+ClarizenO.prototype.factory = function(options) {
     console.log("p method");
     var newObj = null;
     
@@ -21,13 +21,7 @@ ClarizenObject.prototype.factory = function bum(options) {
         return false;
     }
     
-    return newObj(options);
-};
+    return new newObj(options);
+}
 
-var f = new ClarizenObject();
-var user = f.bum({
-        type: 'User',
-        password: "909898fdzf"    
-    });
-    
-console.log("debug 111 " + user.userName);
+

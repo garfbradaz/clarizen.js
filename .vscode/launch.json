@@ -8,6 +8,12 @@
 			"file": "clarizenform.html"
 		},
 		{
+			"name": "Launch test_rig",
+			"type": "chrome",
+			"request": "launch",
+			"file": "testrig.html"
+		},
+		{
 			"name": "Launch localhost with sourcemaps",
 			"type": "chrome",
 			"request": "launch",

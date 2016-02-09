@@ -3,11 +3,11 @@ function ClarizenUser (options) {
     this.password = options.password || 'defaultPW'; 
 }
 
-function ClarizenO () {
+function ClarizenObject () {
     console.log("ClarizenObject Defined");
 }
 
-ClarizenO.prototype.factory = function(options) {
+ClarizenObject.prototype.factory = function(options) {
     console.log("p method");
     var newObj = null;
     

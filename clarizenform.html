@@ -1,9 +1,38 @@
+<!DOCTYPE html>
 <html>
-    <head>
-        <script src="clarizen.js"></script>
-        <script src="clarizenFactory.js"></script>
-        <script src="debug.js"></script>
-    </head>
-    <body onload="run_debug()">
-    </body>
+
+<head>
+    <script src="myutils.js"></script>
+    <script src="clarizen.js"></script>
+    <script src="clarizenFactory.js"></script>
+    <script src="debug.js"></script>
+    <link rel="stylesheet" type="text/css" href="clarizenform.css">
+    <script type="text/javascript">app() </script>
+</head>
+
+<body>
+    <form>
+        <div class="container">
+            <div class="block">
+                <label>Query Type</label>
+                <select id="C_EnhancementRequestHodderEducationQueryType" size="1" required></select>
+            </div>
+            <br>
+            <div class="block">
+                <label>Service</label>
+                <select id="C_EnhancementRequestHodderEducationService" size="1"></select>
+            </div>
+            <br>
+            <div class="block">
+                <label>Other Service</label>
+                <input type="text" placeholder="If you entered 'Other' in Service....">
+            </div>
+            <br>
+            <div class="block">
+                <label>Your Email Address</label>
+                <input type="email" required placeholder="Enter a valid email address">
+            </div>
+        </div>
+    </form>
+</body>
 </html>

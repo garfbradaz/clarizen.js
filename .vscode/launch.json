@@ -1,11 +1,12 @@
 {
-	"version": "0.2.0",
+	"version": "0.2.2",
 	"configurations": [
 		{
 			"name": "Launch clarizenform",
 			"type": "chrome",
 			"request": "launch",
-			"file": "clarizenform.html"
+			"file": "clarizenform.html",
+            "diagnosticLogging": true
 		},
 		{
 			"name": "Launch test_rig",
@@ -20,6 +21,12 @@
 			"url": "http://localhost/mypage.html",
 			"sourceMaps": true,
 			"webRoot": "wwwroot"
+		},
+		{
+			"name": "Attach_clarizen",
+			"type": "chrome",
+			"request": "attach",
+			"port": 9222
 		},
 		{
 			"name": "Attach",

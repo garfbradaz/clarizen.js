@@ -1,0 +1,23 @@
+.container {
+
+  line-height: 25px;
+  text-align:left; 
+  vertical-align:left;
+}
+
+.block  select, input[type=email] , input[type=text] {
+    width: 250px
+}
+
+.block label  {
+    display: inline-block;
+    width: 140px;
+    text-align: right;
+}
+
+
+:required {
+    content: " *";  
+}
+
+

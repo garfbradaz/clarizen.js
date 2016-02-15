@@ -1,8 +1,4 @@
 /**
- * @author Gareth Bradley [zimzum17_1998@hotmail.com]
- * @description Javascript Library to help developers chat to the Clarizen API.
- */
-/**
  * Clarizen constants used in the Clarizen library.
  * @namespace
  */
@@ -10,7 +6,8 @@ const ClarizenConstants = {};
 ClarizenConstants.Urls = {};
 
 /**
- * constant URLs used as the base within {@linkcode Clarizen} 
+ * constant URLs used as the base within {@linkcode Clarizen}
+ * @author Gareth Bradley [zimzum17_1998@hotmail.com]
  * @namespace ClarizenConstants.Urls
  * @property {url}      baseURL                -   baseURL that is used to login and locate the correct server to use.
  * @property {string}   getServerDefinition    -   contains part of the URI used to get the Server Definition. [Clarizen API Documentation]{@link https://api.clarizen.com/V2.0/services/authentication/GetServerDefinition}
@@ -34,6 +31,7 @@ ClarizenConstants.Urls = {
  * @param {string} applicationId - identification that is logged with Clarizen when using the API.
  * @param {string} [optionalServerLocation] - If you know the location URL of the server to chat to.
  * @param {string} [optionalBaseUrl] - Override the {@linkcode ClarizenConstants.Urls~baseURL}
+ * @todo add all comments for JSDoc-To-MD conversion
  */
 var Clarizen = function (userName, password, applicationId, optionalServerLocation, optionalBaseURL) {
 

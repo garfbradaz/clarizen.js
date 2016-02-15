@@ -16,6 +16,10 @@
 <a name="Clarizen"></a>
 ## Clarizen
 **Kind**: global class  
+**Todo**
+
+- [ ] add all comments for JSDoc-To-MD conversion
+
 
 * [Clarizen](#Clarizen)
     * [new Clarizen(userName, password, applicationId, [optionalServerLocation], [optionalBaseUrl])](#new_Clarizen_new)
@@ -50,6 +54,7 @@ Clarizen constants used in the Clarizen library.
 constant URLs used as the base within {@linkcode Clarizen}
 
 **Kind**: static namespace of <code>[ClarizenConstants](#ClarizenConstants)</code>  
+**Author:** Gareth Bradley [zimzum17_1998@hotmail.com]  
 **Properties**
 
 | Name | Type | Description |

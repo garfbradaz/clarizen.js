@@ -1,14 +1,9 @@
 
 var ClarizenForm = function()
 {
-    var obj = new ClarizenObject(),
-        user = obj.factory({
-            type: 'User',
-            userName: "garfbradaz",
-            password: "Bumhead36@"
-        });
+
         
-    this.clarizen = new Clarizen(user.userName, user.password, "clarizen.js", null, "https://api.clarizentb.com/v2.0/services");
+    this.clarizen = new Clarizen("un", "pw", "clarizen.js", null, "https://api.clarizentb.com/v2.0/services");
     
 };
 

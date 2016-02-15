@@ -194,8 +194,8 @@ Clarizen.prototype.login = function () {
     var obj = new ClarizenObject();
     var user = obj.factory({
         type: 'User',
-        userName: "web.service",
-        password: "Rainbow123@"
+        userName: "pw",
+        password: "un"
     });
 
     var jsonBody = JSON.stringify(user);

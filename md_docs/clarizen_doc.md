@@ -90,7 +90,7 @@ This method has been designed to be wired into a onClick event on a button on t
 **Kind**: instance method of <code>[ClarizenForm](#ClarizenForm)</code>  
 <a name="ClarizenForm+main"></a>
 ### clarizenForm.main()
-This is the main function of the ClarizenForm object. Here you can customizeand subscribe to {@linkcode Clarizen} events. In addition logging into the API using {@linkcode Clarizen.login}is a good idea.
+This is the main function of the ClarizenForm object. Here you can customizeand subscribe to [Clarizen](#Clarizen) events. In addition logging into the API using [Clarizen.login](Clarizen.login)is a good idea.
 
 **Kind**: instance method of <code>[ClarizenForm](#ClarizenForm)</code>  
 <a name="ClarizenForm+storageAvailable"></a>

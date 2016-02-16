@@ -27,6 +27,7 @@
     * [new Clarizen(userName, password, applicationId, [optionalServerLocation], [optionalBaseUrl])](#new_Clarizen_new)
     * [.isLoggedIn()](#Clarizen+isLoggedIn) ⇒ <code>Boolean</code>
     * [.getAllEntities(callback)](#Clarizen+getAllEntities) ⇒ <code>string</code>
+    * [.login()](#Clarizen+login)
 
 <a name="new_Clarizen_new"></a>
 ### new Clarizen(userName, password, applicationId, [optionalServerLocation], [optionalBaseUrl])
@@ -62,6 +63,12 @@ Returns the list of available Entities for the users instance of Clarizen.
 | --- | --- | --- |
 | callback | <code>function</code> | callback function that is run once the request has been run and received. |
 
+<a name="Clarizen+login"></a>
+### clarizen.login()
+Logs in to the Clarizen REST API. You can test when the login is succesful by checking the {@linkcode Clarizen.isLoggedIn} method
+
+**Kind**: instance method of <code>[Clarizen](#Clarizen)</code>  
+**Emits**: <code>event:loggedIn</code>  
 <a name="ClarizenForm"></a>
 ## ClarizenForm
 **Kind**: global class  

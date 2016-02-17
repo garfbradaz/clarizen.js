@@ -67,7 +67,9 @@ Clarizen REST library itself. Currently this supports version2 only of the REST 
 
 <a name="Clarizen+isLoggedIn"></a>
 ### clarizen.isLoggedIn() ⇒ <code>Boolean</code>
-This method will validate if the Clarizen client has managed to loginusing the credentials provided and obtained the sessionId key, that is tobe used in all future requests (during the objects lifetime)
+This method will validate if the Clarizen client has managed to login
+using the credentials provided and obtained the sessionId key, that is to
+be used in all future requests (during the objects lifetime)
 
 **Kind**: instance method of <code>[Clarizen](#Clarizen)</code>  
 **Returns**: <code>Boolean</code> - true if the session is logged in, false if the session is not logged in.  
@@ -86,7 +88,11 @@ This internal method will convert the json response to a json object.
 
 <a name="Clarizen+validateMethod"></a>
 ### clarizen.validateMethod(method) ⇒ <code>Boolean</code>
-This internal method will validate the HTTP method, to make sure we only send for method types Clarizen supports.Currently the methods supported are:-GET-POST-HEAD
+This internal method will validate the HTTP method, to make sure we only send for method types Clarizen supports.
+Currently the methods supported are:
+-GET
+-POST
+-HEAD
 
 **Kind**: instance method of <code>[Clarizen](#Clarizen)</code>  
 **Returns**: <code>Boolean</code> - - true: supported, false: not supported.  
@@ -97,7 +103,8 @@ This internal method will validate the HTTP method, to make sure we only send fo
 
 <a name="Clarizen+request"></a>
 ### clarizen.request(options) ⇒ <code>Object</code>
-The most important internal method of the library. This method creates the HTTP request that is sent to Clarizen. This method hanldes CORSas well for Cross-Domain security issues.
+The most important internal method of the library. This method creates the HTTP request that is sent to Clarizen. This method hanldes CORS
+as well for Cross-Domain security issues.
 
 **Kind**: instance method of <code>[Clarizen](#Clarizen)</code>  
 **Returns**: <code>Object</code> - -  response from HTTP request  
@@ -118,7 +125,8 @@ The most important internal method of the library. This method creates the HTTP 
 
 <a name="Clarizen+getPickList"></a>
 ### clarizen.getPickList(response)
-An internal method that gets the Pick List data for <select> tags and publishes the relevantevent and passes the data to the relevant method to be used.
+An internal method that gets the Pick List data for select tags and publishes the relevant
+event and passes the data to the relevant method to be used.
 
 **Kind**: instance method of <code>[Clarizen](#Clarizen)</code>  
 **Emits**: <code>dataForElement&lt;entityDescription&gt; - the entityDescription will be the Clarizen Field name,event: which should be included as the &lt;select&gt; tags ID value.</code>  
@@ -129,7 +137,8 @@ An internal method that gets the Pick List data for <select> tags and publishes 
 
 <a name="Clarizen+getSessionId"></a>
 ### clarizen.getSessionId(response)
-Internal method which checks that the response returned from [clarizen.login](clarizen.login) contains the sessionIdneeded for any other request.
+Internal method which checks that the response returned from [clarizen.login](clarizen.login) contains the sessionId
+needed for any other request.
 
 **Kind**: instance method of <code>[Clarizen](#Clarizen)</code>  
 **Throws**:
@@ -144,7 +153,8 @@ Internal method which checks that the response returned from [clarizen.login](cl
 
 <a name="Clarizen+getServerLocation"></a>
 ### clarizen.getServerLocation(response)
-Internal method used as part of the login process. This method is called to get the Server Location, which is then used to obtain the sessionId.
+Internal method used as part of the login process. This method is called to get the Server Location, which is then used to obtain the 
+sessionId.
 
 **Kind**: instance method of <code>[Clarizen](#Clarizen)</code>  
 
@@ -236,11 +246,15 @@ method in [Clarizen](#Clarizen) library.
 
 <a name="new_ClarizenForm_new"></a>
 ### new ClarizenForm()
-Library that creates Javascript objects and methods to interact with aHTML Form that uses ID's/Classes needed to GET/POST data to the ClarizenREST API. These have extensible methods, designed to be developed for individual needs.
+Library that creates Javascript objects and methods to interact with a
+HTML Form that uses ID's/Classes needed to GET/POST data to the Clarizen
+REST API. These have extensible methods, designed to be developed for individual needs.
 
 <a name="ClarizenForm+setHtml"></a>
 ### clarizenForm.setHtml({@link)
-Method to setup any HTML elements values - for example Picklist options. It worksby setting up the HTML elements ID's as name of the Clarizen API names. These will besent across using [Clarizen](#Clarizen) library. Any values found can be used.
+Method to setup any HTML elements values - for example Picklist options. It works
+by setting up the HTML elements ID's as name of the Clarizen API names. These will be
+sent across using [Clarizen](#Clarizen) library. Any values found can be used.
 
 **Kind**: instance method of <code>[ClarizenForm](#ClarizenForm)</code>  
 
@@ -250,17 +264,23 @@ Method to setup any HTML elements values - for example Picklist options. It work
 
 <a name="ClarizenForm+submitForm"></a>
 ### clarizenForm.submitForm()
-This method has been designed to be wired into a onClick event on a button on the form. When fired submitForm will iterate throughall the DOM elements linked to ID "clarizen-form" and POST themto the Clarizen API as INSERTs.
+This method has been designed to be wired into a onClick event 
+on a button on the form. When fired submitForm will iterate through
+all the DOM elements linked to ID "clarizen-form" and POST them
+to the Clarizen API as INSERTs.
 
 **Kind**: instance method of <code>[ClarizenForm](#ClarizenForm)</code>  
 <a name="ClarizenForm+main"></a>
 ### clarizenForm.main()
-This is the main function of the ClarizenForm object. Here you can customizeand subscribe to [Clarizen](#Clarizen) events. In addition logging into the API using [Clarizen.login](Clarizen.login)is a good idea.
+This is the main function of the ClarizenForm object. Here you can customize
+and subscribe to [Clarizen](#Clarizen) events. In addition logging into the API using [Clarizen.login](Clarizen.login)
+is a good idea.
 
 **Kind**: instance method of <code>[ClarizenForm](#ClarizenForm)</code>  
 <a name="ClarizenForm+updateClarizen"></a>
 ### clarizenForm.updateClarizen()
-An internal method used to update ClarizenForm's internal [Clarizen](#Clarizen) object frompersisted sessionStorage.
+An internal method used to update ClarizenForm's internal [Clarizen](#Clarizen) object from
+persisted sessionStorage.
 
 **Kind**: instance method of <code>[ClarizenForm](#ClarizenForm)</code>  
 <a name="ClarizenForm+persistClarizen"></a>
@@ -336,7 +356,8 @@ Closes the Lightbox popout with clicked.
 **Author:** Gareth Bradley [zimzum17_1998@hotmail.com]  
 <a name="ClarizenFormLightBox.popOut"></a>
 ### ClarizenFormLightBox.popOut(response)
-Pop's out a Lightbox modal dialogue.NOTE TO DEVELOPERS: Please do extend this method to create custom popouts.
+Pop's out a Lightbox modal dialogue.
+NOTE TO DEVELOPERS: Please do extend this method to create custom popouts.
 
 **Kind**: static method of <code>[ClarizenFormLightBox](#ClarizenFormLightBox)</code>  
 **Author:** Gareth Bradley [zimzum17_1998@hotmail.com]  
@@ -347,11 +368,14 @@ Pop's out a Lightbox modal dialogue.NOTE TO DEVELOPERS: Please do extend this m
 
 <a name="app"></a>
 ## app : <code>object</code>
-Function that is called during the head element to load the required [ClarizenForm](#ClarizenForm) values onto disk (sessionStorage) and perform the required methods in [ClarizenForm.main](ClarizenForm.main)
+Function that is called during the head element to load the required
+ [ClarizenForm](#ClarizenForm) values onto disk (sessionStorage) and perform the required
+ methods in [ClarizenForm.main](ClarizenForm.main)
 
 **Kind**: global namespace  
 <a name="submit"></a>
 ## submit : <code>object</code>
-Function that is called when the submit button on the clarizenForm.html is pressed.
+Function that is called when the submit button on the clarizenForm.html
+ is pressed.
 
 **Kind**: global namespace  
